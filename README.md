@@ -30,6 +30,9 @@ Before you begin programming using the Software Development Kit, we recommend th
         T1Config *t1Config = [T1Config new];
         t1Config.enableNotification = YES;
         t1Config.enableLocation = YES;
+        t1Config.enableDevBuild=YES/NO;
+        t1Config.devBaseUrl= ""; //Speficicy the base url of the development environment.
+        t1Config.prodBaseUrl="" //Speicify the base url of the producion environment.
         [TargetOne sharedInstance] initialize: t1Config];
         
         Swift
@@ -39,7 +42,9 @@ Before you begin programming using the Software Development Kit, we recommend th
         let t1Config = T1Config()
         t1Config.enableNotification = true
         t1Config.enableLocation = true
-        t1Config.enableDevBuild = false;
+        t1Config.enableDevBuild = false
+        t1Config.devBaseUrl= "" //Speficicy the base url of the development environment
+        t1Config.prodBaseUrl="" //Speicify the base url of the producion environment.
         targetone?.initialize(t1Config)
   
   **Set Customer Profile**
