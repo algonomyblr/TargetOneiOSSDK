@@ -1,6 +1,0 @@
-framework module TargetOneSDK {
- umbrella header "TargetOneSDK-umbrella.h"
-
- export *
- module * { export * }
-}
